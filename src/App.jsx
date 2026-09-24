@@ -3,8 +3,11 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-import Header from './components/Header'
-import Logo from './components/Logo'
+import Header from './components/Header';
+import Logo from './components/Logo';
+import ReactLogo from './assets/react.svg';
+import Button from './components/Button';
+
 function App() {
  
 
@@ -12,6 +15,8 @@ function App() {
     <>
     <Header heading_text=" react" name="sreedevi" age={25}/>
     <Logo logo="favicon.svg"/>
+    <Logo logo={ReactLogo}/>
+    <Button className= text="click me"/>
     </>
   )
 }
