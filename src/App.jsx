@@ -9,14 +9,21 @@ import ReactLogo from './assets/react.svg';
 import Button from './components/Button';
 
 function App() {
- 
+const showAlert = () =>{
+  alert("button clicked");
+};
+const showSubmit = () =>{
+  console.log("submit button clicked");
+};
 
   return (
     <>
     <Header heading_text=" react" name="sreedevi" age={25}/>
     <Logo logo="favicon.svg"/>
     <Logo logo={ReactLogo}/>
-    <Button className= text="click me"/>
+    <Button className="btn" text="click me" handleClick={showAlert}/>
+    <Button className="btn" text="Submit" handleClick={showSubmit}/>
+
     </>
   )
 }
